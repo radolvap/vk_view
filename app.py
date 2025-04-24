@@ -35,4 +35,4 @@ def viewer_count():
         return f'<html><body style="color: red;">Ошибка: {e}</body></html>'
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=10000)
