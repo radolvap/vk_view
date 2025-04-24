@@ -18,7 +18,7 @@ def viewer_count():
         headers = {"User-Agent": "Mozilla/5.0"}
         res = requests.get(video_url, headers=headers)
         soup = BeautifulSoup(res.text, 'html.parser')
-        viewer_elem = soup.find('span', class_='mv_views')
+        viewer_elem = soup.select_one('.OnlineViewers_root_orkvv span')
         count = viewer_elem.text.strip() if viewer_elem else "Offline"
 
         return f"""
