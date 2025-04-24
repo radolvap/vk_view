@@ -26,8 +26,8 @@ def viewer_count():
         <head>
             <meta http-equiv='refresh' content='10'>
         </head>
-        <body style='background: transparent; color: white; font-size: 40px; font-family: Arial;'>
-            👁 {count}
+        <body style='background: transparent; color: white; font-size: 40px; font-family: ABeeZee;'>
+            {count}
         </body>
         </html>
         """
