@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>VK Live Viewer Counter</title></head>
+<body>
+  <h2>🔴 VK Live OBS Счётчик</h2>
+  <form action="/viewers" method="get" target="_blank">
+    <label>Ссылка на VK Live:</label><br>
+    <input type="text" name="v" size="60" placeholder="https://vk.com/video..." required>
+    <br><br>
+    <button type="submit">Сгенерировать ссылку</button>
+  </form>
+  <p>Добавь полученную ссылку в OBS как Browser Source.<br>
+  Обновление происходит каждые 10 секунд.</p>
+</body>
+</html>
